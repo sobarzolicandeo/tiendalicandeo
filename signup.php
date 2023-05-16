@@ -35,7 +35,7 @@
       }
     ?>
   	<div class="register-box-body">
-    	<p class="login-box-msg">Registrar una nueva membresía</p>
+    	<p class="login-box-msg">Crea tu cuenta en Tienda Licandeo</p>
 
     	<form action="register.php" method="POST">
           <div class="form-group has-feedback">
@@ -75,7 +75,7 @@
       		</div>
     	</form>
       <br>
-      <a href="login.php">Ya tengo una membresia</a><br>
+      <a href="login.php">Ya tengo una cuenta</a><br>
       <a href="index.php"><i class="fa fa-home"></i> Inicio</a>
   	</div>
 </div>

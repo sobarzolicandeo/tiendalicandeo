@@ -45,7 +45,7 @@
     	</form>
       <br>
       <a href="password_forgot.php">Olvidé mi contraseña</a><br>
-      <a href="signup.php" class="text-center">Registrar una nueva membresía</a><br>
+      <a href="signup.php" class="text-center">Crea tu cuenta en Tienda Licandeo</a><br>
       <a href="index.php"><i class="fa fa-home"></i> Inicio</a>
   	</div>
 </div>
