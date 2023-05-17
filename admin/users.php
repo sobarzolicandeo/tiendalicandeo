@@ -11,11 +11,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Users
+        Usuario
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Users</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li class="active">Usuario</li>
       </ol>
     </section>
 
@@ -52,12 +52,12 @@
             <div class="box-body">
               <table id="example1" class="table table-bordered">
                 <thead>
-                  <th>Photo</th>
+                  <th>Foto</th>
                   <th>Email</th>
-                  <th>Name</th>
-                  <th>Status</th>
-                  <th>Date Added</th>
-                  <th>Tools</th>
+                  <th>Nombre</th>
+                  <th>Estado</th>
+                  <th>Fecha Agregada</th>
+                  <th>Herramientas</th>
                 </thead>
                 <tbody>
                   <?php
