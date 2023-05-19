@@ -19,12 +19,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Product List
+        Lista de Productos
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li>Products</li>
-        <li class="active">Product List</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li>Productos</li>
+        <li class="active">Lista de productos</li>
       </ol>
     </section>
 
@@ -89,9 +89,9 @@
                   <th>NOMBRE</th>
                   <th>FOTO</th>
                   <th>DESCRIPCION</th>
-                  <th>PRESO</th>
-                  <th>Views Today</th>
-                  <th>Tools</th>
+                  <th>PRECIO</th>
+                  <th>VISTAS HOY</th>
+                  <th>HERRAMIENTAS</th>
                 </thead>
                 <tbody>
                   <?php
@@ -115,8 +115,8 @@
                             <td>&#36; ".number_format($row['price'], 2)."</td>
                             <td>".$counter."</td>
                             <td>
-                              <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['id']."'><i class='fa fa-edit'></i> Edit</button>
-                              <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['id']."'><i class='fa fa-trash'></i> Delete</button>
+                              <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['id']."'><i class='fa fa-edit'></i> Editar</button>
+                              <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['id']."'><i class='fa fa-trash'></i> Borrar</button>
                             </td>
                           </tr>
                         ";

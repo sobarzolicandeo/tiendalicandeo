@@ -1,6 +1,6 @@
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>All rights reserved</b>
+      <b>Desarrollado por Tienda Licandeo</b>
     </div>
-    <strong>Copyright &copy; 2020 Brought To You By<a href="https://itsourcecode.com/">IT SOURCE CODE</a></strong>
+    <strong> Creado por <a href="https://www.instagram.com/tienda_licandeo/">TIENDA LICANDEO</a></strong>
 </footer>

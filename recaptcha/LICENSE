@@ -1,29 +1,28 @@
-Copyright 2014, Google Inc.
 All rights reserved.
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are
-met:
+Redistribución y uso en formato fuente y binario, con o sin
+modificación, están permitidas siempre que se cumplan las siguientes condiciones
+reunió:
 
-    * Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above
-copyright notice, this list of conditions and the following disclaimer
-in the documentation and/or other materials provided with the
-distribution.
-    * Neither the name of Google Inc. nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
+    * Las redistribuciones del código fuente deben conservar los derechos de autor anteriores
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+aviso, esta lista de condiciones y el siguiente descargo de responsabilidad.
+_ Las redistribuciones en forma binaria deben reproducir lo anterior
+aviso de copyright, esta lista de condiciones y el siguiente descargo de responsabilidad
+en la documentación y/u otros materiales proporcionados con el
+distribución.
+_ Ni el nombre de Google Inc. ni los nombres de sus
+Los colaboradores pueden utilizarse para respaldar o promocionar productos derivados de
+Este software sin el permiso previo por escrito específico.
 
+ESTE SOFTWARE ES PROPORCIONADO POR LOS TITULARES DE LOS DERECHOS DE AUTOR Y LOS CONTRIBUYENTES
+"TAL CUAL" Y CUALQUIER GARANTÍA EXPRESA O IMPLÍCITA, INCLUYENDO, PERO NO
+LIMITADO A LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD E IDONEIDAD PARA
+UN PROPÓSITO PARTICULAR SE RENUNCIA. EN NINGÚN CASO LOS DERECHOS DE AUTOR
+EL PROPIETARIO O LOS COLABORADORES SERÁN RESPONSABLES DE CUALQUIER DAÑO DIRECTO, INDIRECTO, INCIDENTAL,
+DAÑOS ESPECIALES, EJEMPLARES O CONSECUENTES (INCLUYENDO, PERO NO
+LIMITADO A, ADQUISICIÓN DE BIENES O SERVICIOS DE SUSTITUCIÓN; PERDIDA DE USO,
+DATOS O BENEFICIOS; O INTERRUPCIÓN DEL NEGOCIO) CUALQUIERA QUE SEA CAUSADO Y EN CUALQUIER
+TEORÍA DE LA RESPONSABILIDAD, YA SEA POR CONTRATO, RESPONSABILIDAD ESTRICTA O AGRAVIO
+(INCLUIDA LA NEGLIGENCIA O DE OTRO TIPO) QUE SURJA DE CUALQUIER MANERA DEL USO
+DE ESTE SOFTWARE, INCLUSO SI SE ADVIERTE DE LA POSIBILIDAD DE DICHO DAÑO.
