@@ -21,7 +21,7 @@
       }
     ?>
   	<div class="login-box-body">
-    	<p class="login-box-msg">Enter email associated with account</p>
+    	<p class="login-box-msg"> Ingrese correo asociado con la cuenta</p>
 
     	<form action="reset.php" method="POST">
       		<div class="form-group has-feedback">
@@ -35,8 +35,8 @@
       		</div>
     	</form>
       <br>
-      <a href="login.php">I rememberd my password</a><br>
-      <a href="index.php"><i class="fa fa-home"></i> Home</a>
+      <a href="login.php">Recuerdo mi contraseña</a><br>
+      <a href="index.php"><i class="fa fa-home"></i> Inicio</a>
   	</div>
 </div>
 	
