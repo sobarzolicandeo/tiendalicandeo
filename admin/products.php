@@ -56,13 +56,13 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header with-border">
-              <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat" id="addproduct"><i class="fa fa-plus"></i> New</a>
+              <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat" id="addproduct"><i class="fa fa-plus"></i> Nuevo</a>
               <div class="pull-right">
                 <form class="form-inline">
                   <div class="form-group">
-                    <label>Category: </label>
+                    <label>Categoria: </label>
                     <select class="form-control input-sm" id="select_category">
-                      <option value="0">ALL</option>
+                      <option value="0">Todo</option>
                       <?php
                         $conn = $pdo->open();
 

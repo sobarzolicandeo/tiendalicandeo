@@ -4,7 +4,7 @@
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <span class="logo-mini"><b>C</b>P</span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><b>Ecommerce</b>Site</span>
+    <span class="logo-lg"><b>Panel</b>Administracion</span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top">
@@ -28,15 +28,15 @@
 
               <p>
                 <?php echo $admin['firstname'].' '.$admin['lastname']; ?>
-                <small>Member since <?php echo date('M. Y', strtotime($admin['created_on'])); ?></small>
+                <!-- <small>Miembro desde <?php echo date('M. Y', strtotime($admin['created_on'])); ?></small> -->
               </p>
             </li>
             <li class="user-footer">
               <div class="pull-left">
-                <a href="#profile" data-toggle="modal" class="btn btn-default btn-flat" id="admin_profile">Update</a>
+                <a href="#profile" data-toggle="modal" class="btn btn-default btn-flat" id="admin_profile">Panel</a>
               </div>
               <div class="pull-right">
-                <a href="../logout.php" class="btn btn-default btn-flat">Sign out</a>
+                <a href="../logout.php" class="btn btn-default btn-flat">Salir</a>
               </div>
             </li>
           </ul>

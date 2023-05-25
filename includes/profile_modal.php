@@ -9,7 +9,7 @@
             </div>
             <div class="modal-body">
               <p>
-                Date: <span id="date"></span>
+                <!-- Date: <span id="date"></span> -->
                 <span class="pull-right">Transaction#: <span id="transid"></span></span> 
               </p>
               <table class="table table-bordered">
