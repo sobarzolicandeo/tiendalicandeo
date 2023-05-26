@@ -12,8 +12,8 @@
       <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
         <ul class="nav navbar-nav">
           <li><a href="index.php">INICIO</a></li>
-          <li><a href="">SOBRE NOSOTROS</a></li>
-          <li><a href="">CONTACTO</a></li>
+          <li><a href="nosotros.php">SOBRE NOSOTROS</a></li>
+          <li><a href="contacto.php">CONTACTO</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">CATEGORIA <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">

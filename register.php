@@ -33,23 +33,23 @@
 				$now = date('Y-m-d');
 				$password = password_hash($password, PASSWORD_DEFAULT);
 
-				//generate code
+				//codigo generado
 				$set='123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 				$code=substr(str_shuffle($set), 0, 12);
 
-				try{
-					$stmt = $conn->prepare("INSERT INTO users (email, password, firstname, lastname, activate_code, created_on) VALUES (:email, :password, :firstname, :lastname, :code, :now)");
-					$stmt->execute(['email'=>$email, 'password'=>$password, 'firstname'=>$firstname, 'lastname'=>$lastname, 'code'=>$code, 'now'=>$now]);
-					$userid = $conn->lastInsertId();
+			try{
+				$stmt = $conn->prepare("INSERT INTO users (email, password, firstname, lastname, activate_code, created_on) VALUES (:email, :password, :firstname, :lastname, :code, :now)");
+				$stmt->execute(['email'=>$email, 'password'=>$password, 'firstname'=>$firstname, 'lastname'=>$lastname, 'code'=>$code, 'now'=>$now]);
+				$userid = $conn->lastInsertId();
 
-					$message = "
-						<h2>Gracias por Registrarse en Tienda Licandeo.</h2>
-						<p>Tu Cuenta:</p>
-						<p>Correo: ".$email."</p>
-						<p>Contraseña: ".$_POST['password']."</p>
-						<p>Favor hacer click en link para activar su cuenta.</p>
-						<a href='http://localhost/tiendalicandeo/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
-					";
+				$message = "
+					<h2>Gracias por Registrarse en Tienda Licandeo.</h2>
+					<p>Tu Cuenta:</p>
+					<p>Correo: ".$email."</p>
+					<p>Contraseña: ".$_POST['password']."</p>
+					<p>Favor hacer click en link para activar su cuenta.</p>
+					<a href='http://localhost/tiendalicandeo/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
+				";
 
 					//Load phpmailer
 		    		require 'vendor/autoload.php';
@@ -113,7 +113,7 @@
 
 	}
 	else{
-		$_SESSION['error'] = 'Fill up signup form first';
+		$_SESSION['error'] = 'Favor ingrese los datos solicitados';
 		header('location: signup.php');
 	}
 	
