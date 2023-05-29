@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 29-05-2023 a las 00:21:42
+-- Tiempo de generación: 29-05-2023 a las 05:02:47
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.0
 
@@ -59,10 +59,10 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`id`, `name`, `cat_slug`) VALUES
-(6, 'Mate', ''),
-(7, 'Yerba Mate', ''),
-(8, 'Bombillas', ''),
-(9, 'Accesorios', '');
+(1, 'Yerba Mate', 'yerba-mate'),
+(2, 'Bombillas', 'bombillas'),
+(3, 'Accesorios', 'accesorios'),
+(4, 'Mates', 'mates');
 
 -- --------------------------------------------------------
 
@@ -113,7 +113,8 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `category_id`, `name`, `description`, `slug`, `price`, `photo`, `date_view`, `counter`) VALUES
-(31, 7, 'Amanda Tradicional', '<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:1842px\">\r\n	<tbody>\r\n		<tr>\r\n			<td>Yerba Mate tradicional. La yerba contiene vitaminas B1 y B2, adem&aacute;s de amino&aacute;cidos, hierro, sodio, potasio y magnesio. El consumo diario de yerba mate aporta al sistema inmunol&oacute;gico debido a que contiene fotoqu&iacute;micos que lo estimulan mitigando el cansancio mental y f&iacute;sico, gracias a su componente principal que es la mate&iacute;na.<br />\r\n			Ingredientes: Yerba Mate.<br />\r\n			Sin Sellos.</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 'amanda-tradicional', 3.99, 'amanda-tradicional.jpg', '0000-00-00', 0);
+(31, 1, 'Amanda Tradicional', '<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:1842px\">\r\n	<tbody>\r\n		<tr>\r\n			<td>Yerba Mate tradicional. La yerba contiene vitaminas B1 y B2, adem&aacute;s de amino&aacute;cidos, hierro, sodio, potasio y magnesio. El consumo diario de yerba mate aporta al sistema inmunol&oacute;gico debido a que contiene fotoqu&iacute;micos que lo estimulan mitigando el cansancio mental y f&iacute;sico, gracias a su componente principal que es la mate&iacute;na.<br />\r\n			Ingredientes: Yerba Mate.<br />\r\n			Sin Sellos.</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', 'amanda-tradicional-500grs', 3.99, 'amanda-tradicional-500grs.jpg', '2023-05-29', 1),
+(33, 4, 'Mate Mateo Original', '', 'mate-mateo-original', 10990, 'mate-mateo-original.jpg', '0000-00-00', 0);
 
 -- --------------------------------------------------------
 
@@ -163,11 +164,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `type`, `firstname`, `lastname`, `address`, `contact_info`, `photo`, `status`, `activate_code`, `reset_code`, `created_on`) VALUES
-(1, 'admin@admin.com', '$2y$10$0SHFfoWzz8WZpdu9Qw//E.tWamILbiNCX7bqhy3od0gvK5.kSJ8N2', 1, 'Diego', 'Sobarzo', '', '', 'logo1.jpg', 1, '', '', '2020-12-30'),
-(13, 'jude@yahoo.com', '$2y$10$THCiaipRqs51LgZNNSp7henK8SJ17r7abaH44slwjXavv/nVEw29e', 0, 'angel jude', 'suarez', 'Himamaylan City', '09458423256', 'cover.jpg', 1, '', '', '2020-12-30'),
-(16, 'wer@gmail.com', '$2y$10$AayK2L6c/8K9KuRpLD9Ba.RajDP4TQnA70yO90p/KbO4JBAQ1o6Dm', 0, 'alonso', 'icandeo', '', '', '', 1, 'fi8lYM7KmNeI', '', '2023-05-20'),
-(17, '1234@gmail.com', '$2y$10$dd/LbaAsUyPEAA0dHbw99u/rfiBgdFyaXA8yP8jlg0X6Jsz16qnxG', 0, 'pia', 'landa', '', '', '', 0, 'xkv2ZraT6yPj', '', '2023-05-20'),
-(18, 'doi@gmail.com', '$2y$10$FuP2kTV8wfbYrLOwk7aRieEZAKED4IDov5tClXKHpaoRrUhL.ZeRy', 0, 'Diego', 'Sobarzo', '', '', '', 0, 'htvxeVRuszXP', '', '2023-05-23');
+(1, 'dsobarzo@licandeo.cl', '$2y$10$n8p6J9aUwbKx7IeCHUurEee.H8/zIuGfymFkc3vNQe/ahCSbND866', 1, 'Diego', 'Sobarzo', 'Agua Santa 369, ViÃ±a del Mar', '', 'sobarzo-user.jpg', 1, '', '', '2023-05-29'),
+(2, 'ptrujillo@licandeo.cl', '$2y$10$vFE/k7DhXnk0K5qqhutDWO/ILu8ls9k7bNLGCdgLLNp8STXIDCZPG', 1, 'Pia', 'Trujillo', '8 Norte 67, ViÃ±a del Mar', '', 'trujillo-user.jpg', 1, '', '', '2023-05-29');
 
 --
 -- Índices para tablas volcadas
@@ -223,7 +221,7 @@ ALTER TABLE `cart`
 -- AUTO_INCREMENT de la tabla `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `details`
@@ -235,7 +233,7 @@ ALTER TABLE `details`
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT de la tabla `sales`
@@ -247,7 +245,7 @@ ALTER TABLE `sales`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
