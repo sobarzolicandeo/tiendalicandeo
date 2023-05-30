@@ -10,7 +10,7 @@
 			$stmt = $conn->prepare("DELETE FROM category WHERE id=:id");
 			$stmt->execute(['id'=>$id]);
 
-			$_SESSION['success'] = 'Category deleted successfully';
+			$_SESSION['success'] = 'Categoría eliminada correctamente';
 		}
 		catch(PDOException $e){
 			$_SESSION['error'] = $e->getMessage();

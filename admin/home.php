@@ -73,12 +73,12 @@
 
                 echo "<h3>&#36; ".number_format_short($total, 2)."</h3>";
               ?>
-              <p>Ventas Totales</p>
+              <p>Ventas totales</p>
             </div>
             <div class="icon">
               <i class="fa fa-shopping-cart"></i>
             </div>
-            <a href="book.php" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="sales.php" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -99,7 +99,7 @@
             <div class="icon">
               <i class="fa fa-barcode"></i>
             </div>
-            <a href="student.php" class="small-box-footer">Más información<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="products.php" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -115,12 +115,12 @@
                 echo "<h3>".$urow['numrows']."</h3>";
               ?>
              
-              <p>Numero de usuarios</p>
+              <p>Número de usuarios</p>
             </div>
             <div class="icon">
               <i class="fa fa-users"></i>
             </div>
-            <a href="return.php" class="small-box-footer">Más información<i class="fa fa-arrow-circle-right"></i></a>
+            <a href="users.php" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -142,12 +142,12 @@
                 
               ?>
 
-              <p>Ventas Hoy</p>
+              <p>Ventas de hoy</p>
             </div>
             <div class="icon">
               <i class="fa fa-money"></i>
             </div>
-            <a href="borrow.php" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="sales.php" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
