@@ -8,7 +8,7 @@
       </div>
       <div class="pull-left info">
         <p><?php echo $admin['firstname'].' '.$admin['lastname']; ?></p>
-        <a><i class="fa fa-circle text-success"></i> Online</a>
+        <a><i class="fa fa-circle text-success"></i> Conectado</a>
       </div>
     </div>
     <!-- sidebar menu: : style can be found in sidebar.less -->
@@ -16,8 +16,8 @@
       <li class="header">REPORTES</li>
       <li><a href="home.php"><i class="fa fa-dashboard"></i> <span>Panel</span></a></li>
       <li><a href="sales.php"><i class="fa fa-money"></i> <span>Ventas</span></a></li>
-      <li class="header">MANAGE</li>
-      <li><a href="users.php"><i class="fa fa-users"></i> <span>Usuario</span></a></li>
+      <li class="header">GESTION</li>
+      <li><a href="users.php"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
       <li class="treeview">
         <a href="#">
           <i class="fa fa-barcode"></i>
