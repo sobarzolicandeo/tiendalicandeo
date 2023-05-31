@@ -12,13 +12,13 @@
 		$row = $stmt->fetch();
 
 		if($row['numrows'] > 0){
-			$_SESSION['error'] = 'Category already exist';
+			$_SESSION['error'] = 'Categoria actualmente se encuentra registrada en sistema';
 		}
 		else{
 			try{
 				$stmt = $conn->prepare("INSERT INTO category (name) VALUES (:name)");
 				$stmt->execute(['name'=>$name]);
-				$_SESSION['success'] = 'Category added successfully';
+				$_SESSION['success'] = 'Categoria agregada correctamente';
 			}
 			catch(PDOException $e){
 				$_SESSION['error'] = $e->getMessage();
