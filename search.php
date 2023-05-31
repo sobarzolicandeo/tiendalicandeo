@@ -31,7 +31,7 @@
 					 
 						    foreach ($stmt as $row) {
 						    	$highlighted = preg_filter('/' . preg_quote($_POST['keyword'], '/') . '/i', '<b>$0</b>', $row['name']);
-						    	$image = (!empty($row['photo'])) ? 'images/'.$row['photo'] : 'images/noimage.jpg';
+						    	$image = (!empty($row['photo'])) ? 'images/products/'.$row['photo'] : 'images/products/noimage.jpg';
 						    	$inc = ($inc == 3) ? 1 : $inc + 1;
 	       						if($inc == 1) echo "<div class='row'>";
 	       						echo "

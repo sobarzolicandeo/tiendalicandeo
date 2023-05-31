@@ -30,13 +30,13 @@
 		                </ol>
 		                <div class="carousel-inner">
 		                  <div class="item active">
-		                    <img src="images/imagen2.jpg" alt="First slide">
+		                    <img src="images/carousel/imagen2.jpg" alt="First slide">
 		                  </div>
 						  <div class="item">
-           					<img src="images/cordillera.jpg" alt="Second slide">
+           					<img src="images/carousel/imagen3.jpg" alt="Second slide">
         				  </div>
 						  <div class="item">
-           					<img src="images/imagen3.jpg" alt="Second slide">
+           					<img src="images/carousel/imagen7.jpg" alt="Second slide">
         				  </div>						  
 		                </div>
 		                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -56,7 +56,7 @@
 						    $stmt = $conn->prepare("SELECT *, SUM(quantity) AS total_qty FROM details LEFT JOIN sales ON sales.id=details.sales_id LEFT JOIN products ON products.id=details.product_id WHERE MONTH(sales_date) = '$month' GROUP BY details.product_id ORDER BY total_qty DESC LIMIT 6");
 						    $stmt->execute();
 						    foreach ($stmt as $row) {
-						    	$image = (!empty($row['photo'])) ? 'images/'.$row['photo'] : 'images/noimage.jpg';
+						    	$image = (!empty($row['photo'])) ? 'images/products/'.$row['photo'] : 'images/products/noimage.jpg';
 						    	$inc = ($inc == 3) ? 1 : $inc + 1;
 	       						if($inc == 1) echo "<div class='row'>";
 	       						echo "

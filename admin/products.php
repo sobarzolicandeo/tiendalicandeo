@@ -102,7 +102,7 @@
                       $stmt = $conn->prepare("SELECT * FROM products $where");
                       $stmt->execute();
                       foreach($stmt as $row){
-                        $image = (!empty($row['photo'])) ? '../images/'.$row['photo'] : '../images/noimage.jpg';
+                        $image = (!empty($row['photo'])) ? '../images/products/'.$row['photo'] : '../images/products/noimage.jpg';
                         $counter = ($row['date_view'] == $now) ? $row['counter'] : 0;
                         echo "
                           <tr>
