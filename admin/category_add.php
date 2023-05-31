@@ -18,7 +18,7 @@
 			try{
 				$stmt = $conn->prepare("INSERT INTO category (name) VALUES (:name)");
 				$stmt->execute(['name'=>$name]);
-				$_SESSION['success'] = 'Categoria agregada correctamente';
+				$_SESSION['success'] = 'Categoría ingresada correctamente';
 			}
 			catch(PDOException $e){
 				$_SESSION['error'] = $e->getMessage();
