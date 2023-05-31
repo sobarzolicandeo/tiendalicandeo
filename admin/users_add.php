@@ -23,7 +23,7 @@
 			$filename = $_FILES['photo']['name'];
 			$now = date('Y-m-d');
 			if(!empty($filename)){
-				move_uploaded_file($_FILES['photo']['tmp_name'], '../images/'.$filename);	
+				move_uploaded_file($_FILES['photo']['tmp_name'], '../images/users'.$filename);	
 			}
 			try{
 				$stmt = $conn->prepare("INSERT INTO users (email, password, firstname, lastname, address, contact_info, photo, status, created_on) VALUES (:email, :password, :firstname, :lastname, :address, :contact, :photo, :status, :created_on)");

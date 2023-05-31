@@ -18,7 +18,7 @@
 		$photo = $_FILES['photo']['name'];
 		if(password_verify($curr_password, $admin['password'])){
 			if(!empty($photo)){
-				move_uploaded_file($_FILES['photo']['tmp_name'], '../images/'.$photo);
+				move_uploaded_file($_FILES['photo']['tmp_name'], '../images/users/'.$photo);
 				$filename = $photo;	
 			}
 			else{
