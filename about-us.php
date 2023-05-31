@@ -30,7 +30,7 @@
 		                </ol>
 		                <div class="carousel-inner">
 		                  <div class="item active">
-		                    <img src="images/carousel/mate1.jpg" alt="First slide">
+		                    <img src="images/carousel/imagen3.jpg" alt="First slide">
 		                  </div>
 						  <div class="item">
            					<img src="images/carousel/imagen7.jpg" alt="Second slide">
@@ -50,7 +50,7 @@
                     <br>
                         
                     
-		            <h1>Sobre Nosotros</h1>
+		            <h1>Sobre nosotros</h1>
                     
                     <br>
                     <br>

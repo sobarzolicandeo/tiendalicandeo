@@ -11,11 +11,11 @@
       <!-- Recopile los enlaces de navegación, formularios y otro contenido para alternar-->
       <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="index.php">INICIO</a></li>
-          <li><a href="nosotros.php">SOBRE NOSOTROS</a></li>
-          <li><a href="contacto.php">CONTACTO</a></li>
+          <li><a href="index.php">Inicio</a></li>
+          <li><a href="about-us.php">Sobre nosotros</a></li>
+          <li><a href="contacto.php">Contacto</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">CATEGORIA <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorías <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <?php
              
@@ -100,8 +100,8 @@
             }
             else{
               echo "
-                <li><a href='login.php'>ACCESO</a></li>
-                <li><a href='signup.php'>REGISTRARSE</a></li>
+                <li><a href='login.php'>Iniciar sesión</a></li>
+                <li><a href='signup.php'>Registrarse</a></li>
               ";
             }
           ?>
