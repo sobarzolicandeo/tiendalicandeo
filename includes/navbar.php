@@ -69,7 +69,7 @@
           </li>
           <?php
             if(isset($_SESSION['user'])){
-              $image = (!empty($user['photo'])) ? 'images/'.$user['photo'] : 'images/profile.jpg';
+              $image = (!empty($user['photo'])) ? 'images/users/'.$user['photo'] : 'images/users/profile.jpg';
               echo '
                 <li class="dropdown user user-menu">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
