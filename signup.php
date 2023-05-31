@@ -4,12 +4,12 @@
     header('location: cart_view.php');
   }
 
-  if(isset($_SESSION['captcha'])){
-    $now = time();
-    if($now >= $_SESSION['captcha']){
-      unset($_SESSION['captcha']);
-    }
-  }
+  // if(isset($_SESSION['captcha'])){
+  //   $now = time();
+  //   if($now >= $_SESSION['captcha']){
+  //     unset($_SESSION['captcha']);
+  //   }
+  // }
 
 ?>
 <?php include 'includes/header.php'; ?>
@@ -58,6 +58,7 @@
             <input type="password" class="form-control" name="repassword" placeholder="Repetir contraseña" required>
             <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
           </div>
+        
           <?php
             // if(!isset($_SESSION['captcha'])){
             //   echo '
@@ -67,10 +68,11 @@
             //   ';
             // }
           ?>
+
           <hr>
       		<div class="row">
-    			<div class="col-xs-4">
-          			<button type="submit" class="btn btn-primary btn-block btn-flat" name="signup"><i class="fa fa-pencil"></i> Sign Up</button>
+    			<div class="col-xs-6">
+          			<button type="submit" class="btn btn-primary btn-block btn-flat" name="Crear Cuenta"><i class="fa fa-pencil"></i> Crear Cuenta </button>
         		</div>
       		</div>
     	</form>

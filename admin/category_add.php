@@ -12,7 +12,7 @@
 		$row = $stmt->fetch();
 
 		if($row['numrows'] > 0){
-			$_SESSION['error'] = 'Categoría ya existe';
+			$_SESSION['error'] = 'Categoria actualmente se encuentra registrada en sistema';
 		}
 		else{
 			try{

@@ -32,6 +32,12 @@
 		                  <div class="item active">
 		                    <img src="images/imagen2.jpg" alt="First slide">
 		                  </div>
+						  <div class="item">
+           					<img src="images/cordillera.jpg" alt="Second slide">
+        				  </div>
+						  <div class="item">
+           					<img src="images/imagen3.jpg" alt="Second slide">
+        				  </div>						  
 		                </div>
 		                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
 		                  <span class="fa fa-angle-left"></span>

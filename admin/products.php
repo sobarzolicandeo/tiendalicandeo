@@ -45,7 +45,7 @@
           echo "
             <div class='alert alert-success alert-dismissible'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-              <h4><i class='icon fa fa-check'></i> Success!</h4>
+              <h4><i class='icon fa fa-check'></i> Listo!</h4>
               ".$_SESSION['success']."
             </div>
           ";
@@ -56,13 +56,13 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header with-border">
-              <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat" id="addproduct"><i class="fa fa-plus"></i> New</a>
+              <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat" id="addproduct"><i class="fa fa-plus"></i> Nuevo</a>
               <div class="pull-right">
                 <form class="form-inline">
                   <div class="form-group">
-                    <label>Category: </label>
+                    <label>Categoria: </label>
                     <select class="form-control input-sm" id="select_category">
-                      <option value="0">ALL</option>
+                      <option value="0">Todo</option>
                       <?php
                         $conn = $pdo->open();
 

@@ -7,7 +7,7 @@
                 <h4><i class="icon fa fa-warning"></i> Error!</h4>
                 Code to activate account not found.
             </div>
-            <h4>You may <a href="signup.php">Signup</a> or back to <a href="index.php">Homepage</a>.</h4>
+            <h4>Debes Ingresar <a href="signup.php">Signup</a> o regresar al <a href="index.php">Inicio</a>.</h4>
 		'; 
 	}
 	else{
@@ -22,9 +22,9 @@
 				$output .= '
 					<div class="alert alert-danger">
 		                <h4><i class="icon fa fa-warning"></i> Error!</h4>
-		                Account already activated.
+		                Cuenta ya existente.
 		            </div>
-		            <h4>You may <a href="login.php">Login</a> or back to <a href="index.php">Homepage</a>.</h4>
+		            <h4>Debes Ingresa <a href="login.php">Login</a> o regresar al <a href="index.php">Inicio</a>.</h4>
 				';
 			}
 			else{
@@ -36,7 +36,7 @@
 			                <h4><i class="icon fa fa-check"></i> Success!</h4>
 			                Account activated - Email: <b>'.$row['email'].'</b>.
 			            </div>
-			            <h4>You may <a href="login.php">Login</a> or back to <a href="index.php">Homepage</a>.</h4>
+			            <h4>Debes ingresar <a href="login.php">Login</a> o regresar al <a href="index.php">Inicio</a>.</h4>
 					';
 				}
 				catch(PDOException $e){
@@ -45,7 +45,7 @@
 			                <h4><i class="icon fa fa-warning"></i> Error!</h4>
 			                '.$e->getMessage().'
 			            </div>
-			            <h4>You may <a href="signup.php">Signup</a> or back to <a href="index.php">Homepage</a>.</h4>
+			            <h4>Debes ingresar <a href="signup.php">Signup</a> or regresar al <a href="index.php">Inicio</a>.</h4>
 					';
 				}
 
@@ -58,7 +58,7 @@
 	                <h4><i class="icon fa fa-warning"></i> Error!</h4>
 	                Cannot activate account. Wrong code.
 	            </div>
-	            <h4>You may <a href="signup.php">Signup</a> or back to <a href="index.php">Homepage</a>.</h4>
+	            <h4>Debes ingresar <a href="signup.php">Signup</a> o regresar al <a href="index.php">Inicio</a>.</h4>
 			';
 		}
 

@@ -49,7 +49,7 @@
 				$now = date('Y-m-d');
 				$password = password_hash($password, PASSWORD_DEFAULT);
 
-				//generate code
+				//codigo generado
 				$set='123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 				$code=substr(str_shuffle($set), 0, 12);
 
@@ -59,11 +59,11 @@
 					$userid = $conn->lastInsertId();
 
 					$message = "
-						<h2>Thank you for Registering.</h2>
-						<p>Your Account:</p>
-						<p>Email: ".$email."</p>
-						<p>Password: ".$_POST['password']."</p>
-						<p>Please click the link below to activate your account.</p>
+						<h2>Gracias por Registrarse en Tienda Licandeo.</h2>
+						<p>Tu Cuenta:</p>
+						<p>Correo: ".$email."</p>
+						<p>Contraseña: ".$_POST['password']."</p>
+						<p>Favor hacer click en link para activar su cuenta.</p>
 						<a href='http://localhost/tiendalicandeo/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
 					";
 
@@ -129,8 +129,9 @@
 
 	}
 	else{
-		$_SESSION['error'] = 'Fill up signup form first';
+		$_SESSION['error'] = 'Favor ingrese los datos solicitados';
 		header('location: signup.php');
 	}
+	
 
 ?>

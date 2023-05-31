@@ -12,8 +12,8 @@
       <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
         <ul class="nav navbar-nav">
           <li><a href="index.php">INICIO</a></li>
-          <li><a href="">SOBRE NOSOTROS</a></li>
-          <li><a href="">CONTACTO</a></li>
+          <li><a href="nosotros.php">SOBRE NOSOTROS</a></li>
+          <li><a href="contacto.php">CONTACTO</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">CATEGORIA <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
@@ -59,12 +59,12 @@
               <span class="label label-success cart_count"></span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have <span class="cart_count"></span> item(s) in cart</li>
+              <li class="header">Tu tienes <span class="cart_count"></span> item(s) en el carrito</li>
               <li>
                 <ul class="menu" id="cart_menu">
                 </ul>
               </li>
-              <li class="footer"><a href="cart_view.php">Go to Cart</a></li>
+              <li class="footer"><a href="cart_view.php">Ir a Carrito</a></li>
             </ul>
           </li>
           <?php
@@ -91,7 +91,7 @@
                         <a href="profile.php" class="btn btn-default btn-flat">Profile</a>
                       </div>
                       <div class="pull-right">
-                        <a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
+                        <a href="logout.php" class="btn btn-default btn-flat"> Salir </a>
                       </div>
                     </li>
                   </ul>

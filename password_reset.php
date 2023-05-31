@@ -19,7 +19,7 @@
       }
     ?>
   	<div class="login-box-body">
-    	<p class="login-box-msg">Enter new password</p>
+    	<p class="login-box-msg">Ingrese nueva contraseña</p>
 
     	<form action="password_new.php?code=<?php echo $_GET['code']; ?>&user=<?php echo $_GET['user']; ?>" method="POST">
       		<div class="form-group has-feedback">
@@ -32,7 +32,7 @@
           </div>
       		<div class="row">
     			<div class="col-xs-4">
-          			<button type="submit" class="btn btn-primary btn-block btn-flat" name="reset"><i class="fa fa-check-square-o"></i> Reset</button>
+          			<button type="submit" class="btn btn-primary btn-block btn-flat" name="reset"><i class="fa fa-check-square-o"></i> Actualizar</button>
         		</div>
       		</div>
     	</form>
