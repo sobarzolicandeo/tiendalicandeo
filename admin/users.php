@@ -56,7 +56,7 @@
                   <th>Correo electrónico</th>
                   <th>Nombre</th>
                   <th>Estado</th>
-                  <th>Fecha Agregada</th>
+                  <!-- <th>Fecha Agregada</th> -->
                   <th>Herramientas</th>
                 </thead>
                 <tbody>
@@ -82,7 +82,7 @@
                               ".$status."
                               ".$active."
                             </td>
-                            <td>".date('M d, Y', strtotime($row['created_on']))."</td>
+                            
                             <td>
                               <a href='cart.php?user=".$row['id']."' class='btn btn-info btn-sm btn-flat'><i class='fa fa-search'></i> Carro</a>
                               <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['id']."'><i class='fa fa-edit'></i> Editar</button>

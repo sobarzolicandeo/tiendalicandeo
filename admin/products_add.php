@@ -17,7 +17,7 @@
 		$row = $stmt->fetch();
 
 		if($row['numrows'] > 0){
-			$_SESSION['error'] = 'Product already exist';
+			$_SESSION['error'] = 'Nombre de producto actualmente se encuentra registrado en sistema';
 		}
 		else{
 			if(!empty($filename)){
@@ -32,7 +32,7 @@
 			try{
 				$stmt = $conn->prepare("INSERT INTO products (category_id, name, description, slug, price, photo) VALUES (:category, :name, :description, :slug, :price, :photo)");
 				$stmt->execute(['category'=>$category, 'name'=>$name, 'description'=>$description, 'slug'=>$slug, 'price'=>$price, 'photo'=>$new_filename]);
-				$_SESSION['success'] = 'User added successfully';
+				$_SESSION['success'] = 'Producto agregado correctamente';
 
 			}
 			catch(PDOException $e){
