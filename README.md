@@ -21,9 +21,8 @@
 | sb-3ogkn26138059@personal.example.com   | 12345678   |
 
 ## Usuario PayPal Developer para revisar notificaciones
+[PayPal Developer Dashboard](https://developer.paypal.com/dashboard/notifications)
 | Email                       | Contraseña |
 | ----------------------------| ---------- |
 | sobarzolicandeo@gmail.com   | Diego.3062 |
-
-[PayPal Developer Dashboard](https://developer.paypal.com/dashboard/notifications)
 
