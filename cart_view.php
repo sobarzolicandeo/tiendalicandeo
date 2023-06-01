@@ -160,7 +160,7 @@ paypal.Button.render({
     env: 'sandbox', // cambio para producción si la aplicación está activa,
 
 	client: {
-        sandbox:    'ASb1ZbVxG5ZFzCWLdYLi_d1-k5rmSjvBZhxP2etCxBKXaJHxPba13JJD_D3dTNriRbAv3Kp_72cgDvaZ',
+        sandbox: 'Ad3pIUnmCLJcgG07cf2qrMOERuWSKNZnw7kZYGHVEFJP9nyI7-Ud9kCN6qTPy7OLY3-JKADLjTP2zgYz',
         //production: 'AaBHKJFEej4V6yaArjzSx9cuf-UYesQYKqynQVCdBlKuZKawDDzFyuQdidPOBSGEhWaNQnnvfzuFB9SM'
     },
 
@@ -179,7 +179,7 @@ paypal.Button.render({
                     	//total purchase
                         amount: { 
                         	total: total, 
-                        	currency: 'CLP' 
+                        	currency: 'USD' 
                         }
                     }
                 ]
