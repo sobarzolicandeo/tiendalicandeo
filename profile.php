@@ -46,7 +46,7 @@
 	        						<div class="col-sm-3">
 	        							<h4>Nombre:</h4>
 	        							<h4>Correo:</h4>
-	        							<h4>Telefono:</h4>
+	        							<h4>Teléfono:</h4>
 	        							<h4>Dirección:</h4>
 	        							<!-- <h4>Member Since:</h4> -->
 	        						</div>
@@ -67,16 +67,16 @@
 	        		</div>
 	        		<div class="box box-solid">
 	        			<div class="box-header with-border">
-	        				<h4 class="box-title"><i class="fa fa-calendar"></i> <b>Transacciones</b></h4>
+	        				<h4 class="box-title"><i class="fa fa-calendar"></i> <b>&nbsp;Transacciones</b></h4>
 	        			</div>
 	        			<div class="box-body">
 	        				<table id="example1" class="table table-bordered">
 	        					<thead>
 	        						<th class="hidden"></th>
 	        						<th>Fecha</th>
-	        						<th>Transacción</th>
+	        						<th>N° Transacción</th>
 	        						<th>Monto</th>
-	        						<th>Detalles</th>
+	        						<th>Detalle</th>
 	        					</thead>
 	        					<tbody>
 	        					<?php

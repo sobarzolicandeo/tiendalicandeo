@@ -41,7 +41,7 @@
         </ul>
         <form method="POST" class="navbar-form navbar-left" action="search.php">
           <div class="input-group">
-              <input type="text" class="form-control" id="navbar-search-input" name="keyword" placeholder="Buscar Producto" required>
+              <input type="text" class="form-control" id="navbar-search-input" name="keyword" placeholder="Buscar producto" required>
               <span class="input-group-btn" id="searchBtn" style="display:none;">
                   <button type="submit" class="btn btn-default btn-flat"><i class="fa fa-search"></i> </button>
               </span>
@@ -83,15 +83,15 @@
 
                       <p>
                         '.$user['firstname'].' '.$user['lastname'].'
-                        <small>Member since '.date('M. Y', strtotime($user['created_on'])).'</small>
+                        <small>Registrado desde '.date('M. Y', strtotime($user['created_on'])).'</small>
                       </p>
                     </li>
                     <li class="user-footer">
                       <div class="pull-left">
-                        <a href="profile.php" class="btn btn-default btn-flat">Profile</a>
+                        <a href="profile.php" class="btn btn-default btn-flat">Perfil</a>
                       </div>
                       <div class="pull-right">
-                        <a href="logout.php" class="btn btn-default btn-flat"> Salir </a>
+                        <a href="logout.php" class="btn btn-default btn-flat">Cerrar sesión</a>
                       </div>
                     </li>
                   </ul>

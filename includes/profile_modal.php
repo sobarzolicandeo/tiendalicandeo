@@ -5,12 +5,12 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"><b>Detalles de Transaccion</b></h4>
+              <h4 class="modal-title"><b>Detalle transacción</b></h4>
             </div>
             <div class="modal-body">
               <p>
                 <!-- Date: <span id="date"></span> -->
-                <span class="pull-right">Transaction#: <span id="transid"></span></span> 
+                <span class="pull-right">N° Transacción: <span id="transid"></span></span> 
               </p>
               <table class="table table-bordered">
                 <thead>
