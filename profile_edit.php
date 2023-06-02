@@ -40,11 +40,11 @@
 			
 		}
 		else{
-			$_SESSION['error'] = 'Incorrect password';
+			$_SESSION['error'] = 'Contraseña incorrecta';
 		}
 	}
 	else{
-		$_SESSION['error'] = 'Fill up edit form first';
+		$_SESSION['error'] = 'Primero rellene el formulario de edición';
 	}
 
 	$pdo->close();
