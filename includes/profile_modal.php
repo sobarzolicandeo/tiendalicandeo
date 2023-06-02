@@ -41,7 +41,7 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"><b>Actualizar Cuenta</b></h4>
+              <h4 class="modal-title"><b>Editar cuenta</b></h4>
             </div>
             <div class="modal-body">
               <form class="form-horizontal" method="POST" action="profile_edit.php" enctype="multipart/form-data">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="email" class="col-sm-3 control-label">Correo</label>
+                    <label for="email" class="col-sm-3 control-label">Correo electrónico</label>
 
                     <div class="col-sm-9">
                       <input type="text" class="form-control" id="email" name="email" value="<?php echo $user['email']; ?>">
@@ -74,14 +74,14 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="contact" class="col-sm-3 control-label">Telefono</label>
+                    <label for="contact" class="col-sm-3 control-label">Teléfono</label>
 
                     <div class="col-sm-9">
                       <input type="text" class="form-control" id="contact" name="contact" value="<?php echo $user['contact_info']; ?>">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="address" class="col-sm-3 control-label">Direccion</label>
+                    <label for="address" class="col-sm-3 control-label">Dirección</label>
 
                     <div class="col-sm-9">
                       <textarea class="form-control" id="address" name="address"><?php echo $user['address']; ?></textarea>
@@ -100,13 +100,13 @@
                     <label for="curr_password" class="col-sm-3 control-label">Contraseña actual</label>
 
                     <div class="col-sm-9">
-                      <input type="password" class="form-control" id="curr_password" name="curr_password" placeholder="input current password to save changes" required>
+                      <input type="password" class="form-control" id="curr_password" name="curr_password" placeholder="Ingrese la contraseña actual para guardar los cambios" required>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Cerrar</button>
-              <button type="submit" class="btn btn-success btn-flat" name="edit"><i class="fa fa-check-square-o"></i> Guardar</button>
+              <button type="submit" class="btn btn-success btn-flat" name="edit"><i class="fa fa-check-square-o"></i> Editar</button>
               </form>
             </div>
         </div>
