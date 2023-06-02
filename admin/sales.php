@@ -42,10 +42,10 @@
                 <thead>
                   <th class="hidden"></th>
                   <th>Fecha</th>
-                  <th>Nombre del comprador</th>
-                  <th>Transacción</th>
+                  <th>Nombre comprador</th>
+                  <th>N° Transacción</th>
                   <th>Cantidad</th>
-                  <th>Todos los detalles</th>
+                  <th>Detalle</th>
                 </thead>
                 <tbody>
                   <?php

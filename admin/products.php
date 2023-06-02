@@ -45,7 +45,6 @@
           echo "
             <div class='alert alert-success alert-dismissible'>
               <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-              <h4><i class='icon fa fa-check'></i> Listo!</h4>
               ".$_SESSION['success']."
             </div>
           ";
@@ -56,13 +55,13 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header with-border">
-              <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat" id="addproduct"><i class="fa fa-plus"></i> Nuevo</a>
+              <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat" id="addproduct"><i class="fa fa-plus"></i> Ingresar producto</a>
               <div class="pull-right">
                 <form class="form-inline">
                   <div class="form-group">
-                    <label>Categoria: </label>
+                    <label>Categoríaa: </label>
                     <select class="form-control input-sm" id="select_category">
-                      <option value="0">Todo</option>
+                      <option value="0">Todas</option>
                       <?php
                         $conn = $pdo->open();
 
@@ -86,12 +85,12 @@
             <div class="box-body">
               <table id="example1" class="table table-bordered">
                 <thead>
-                  <th>NOMBRE</th>
-                  <th>FOTO</th>
-                  <th>DESCRIPCION</th>
-                  <th>PRECIO</th>
-                  <th>VISTAS HOY</th>
-                  <th>HERRAMIENTAS</th>
+                  <th>Nombre</th>
+                  <th>Imagen</th>
+                  <th>Descripción</th>
+                  <th>Precio</th>
+                  <th>Vistas hoy</th>
+                  <th>Acciones</th>
                 </thead>
                 <tbody>
                   <?php
@@ -111,12 +110,12 @@
                               <img src='".$image."' height='30px' width='30px'>
                               <span class='pull-right'><a href='#edit_photo' class='photo' data-toggle='modal' data-id='".$row['id']."'><i class='fa fa-edit'></i></a></span>
                             </td>
-                            <td><a href='#description' data-toggle='modal' class='btn btn-info btn-sm btn-flat desc' data-id='".$row['id']."'><i class='fa fa-search'></i> View</a></td>
+                            <td><a href='#description' data-toggle='modal' class='btn btn-info btn-sm btn-flat desc' data-id='".$row['id']."'><i class='fa fa-search'></i> Ver</a></td>
                             <td>&#36; ".number_format($row['price'], 2)."</td>
                             <td>".$counter."</td>
                             <td>
                               <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['id']."'><i class='fa fa-edit'></i> Editar</button>
-                              <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['id']."'><i class='fa fa-trash'></i> Borrar</button>
+                              <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['id']."'><i class='fa fa-trash'></i> Eliminar</button>
                             </td>
                           </tr>
                         ";

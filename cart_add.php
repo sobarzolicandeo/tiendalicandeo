@@ -16,7 +16,7 @@
 			try{
 				$stmt = $conn->prepare("INSERT INTO cart (user_id, product_id, quantity) VALUES (:user_id, :product_id, :quantity)");
 				$stmt->execute(['user_id'=>$user['id'], 'product_id'=>$id, 'quantity'=>$quantity]);
-				$output['message'] = 'Item agregado al carrito de compra';
+				$output['message'] = 'Ítem agregado al carrito de compra';
 				
 			}
 			catch(PDOException $e){
@@ -49,7 +49,7 @@
 			$data['quantity'] = $quantity;
 
 			if(array_push($_SESSION['cart'], $data)){
-				$output['message'] = 'Item agregado al carrito de compra';
+				$output['message'] = 'Ítem agregado al carrito de compra';
 			}
 			else{
 				$output['error'] = true;
