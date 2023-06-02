@@ -16,7 +16,24 @@
 <script>
   $(function () {
     // Datatable
-    $('#example1').DataTable()
+    $('#example1').DataTable({
+      'responsive': true,
+      'language'    : {
+            "lengthMenu": "Mostrar _MENU_ registros por página",
+            "search": "Buscar:",
+            "searchPlaceholder": "",
+            "zeroRecords": "No se encontró nada",
+            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay registros disponibles",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+      'paginate': {
+        "first": "Primero",
+        "last": "Último",
+        "next": "Siguiente",
+        "previous": "Anterior"
+      },
+    },
+    })
     //CK Editor
     CKEDITOR.replace('editor1')
   });
