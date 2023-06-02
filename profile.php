@@ -53,7 +53,7 @@
 	        						<div class="col-sm-9">
 	        							<h4><?php echo $user['firstname'].' '.$user['lastname']; ?>
 	        								<span class="pull-right">
-	        									<a href="#edit" class="btn btn-success btn-flat btn-sm" data-toggle="modal"><i class="fa fa-edit"></i> Edit</a>
+	        									<a href="#edit" class="btn btn-success btn-flat btn-sm" data-toggle="modal"><i class="fa fa-edit"></i> Editar</a>
 	        								</span>
 	        							</h4>
 	        							<h4><?php echo $user['email']; ?></h4>
@@ -70,11 +70,11 @@
 	        				<h4 class="box-title"><i class="fa fa-calendar"></i> <b>Transacciones</b></h4>
 	        			</div>
 	        			<div class="box-body">
-	        				<table class="table table-bordered" id="example1">
+	        				<table id="example1" class="table table-bordered">
 	        					<thead>
 	        						<th class="hidden"></th>
 	        						<th>Fecha</th>
-	        						<th>Transaccion#</th>
+	        						<th>Transacción</th>
 	        						<th>Monto</th>
 	        						<th>Detalles</th>
 	        					</thead>

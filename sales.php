@@ -25,7 +25,7 @@
 				$stmt = $conn->prepare("DELETE FROM cart WHERE user_id=:user_id");
 				$stmt->execute(['user_id'=>$user['id']]);
 
-				$_SESSION['success'] = 'Transaction successful. Thank you.';
+				$_SESSION['success'] = 'Transacción realizada con éxito. Muchas gracias.';
 
 			}
 			catch(PDOException $e){
