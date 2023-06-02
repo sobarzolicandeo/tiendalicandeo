@@ -45,7 +45,7 @@
                   <th>Nombre comprador</th>
                   <th>N° Transacción</th>
                   <th>Cantidad</th>
-                  <th>Detalles</th>
+                  <th>Detalle</th>
                 </thead>
                 <tbody>
                   <?php
