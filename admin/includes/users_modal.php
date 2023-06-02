@@ -75,13 +75,13 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"><b>Editar Usuario</b></h4>
+              <h4 class="modal-title"><b>Editar usuario</b></h4>
             </div>
             <div class="modal-body">
               <form class="form-horizontal" method="POST" action="users_edit.php">
                 <input type="hidden" class="userid" name="id">
                 <div class="form-group">
-                    <label for="edit_email" class="col-sm-3 control-label">Correo</label>
+                    <label for="edit_email" class="col-sm-3 control-label">Correo electrónico</label>
 
                     <div class="col-sm-9">
                       <input type="email" class="form-control" id="edit_email" name="email">
@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="edit_contact" class="col-sm-3 control-label"> Telefono</label>
+                    <label for="edit_contact" class="col-sm-3 control-label"> Teléfono</label>
 
                     <div class="col-sm-9">
                       <input type="text" class="form-control" id="edit_contact" name="contact">
@@ -125,7 +125,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Cerrar </button>
-              <button type="submit" class="btn btn-success btn-flat" name="edit"><i class="fa fa-check-square-o"></i> Guardar </button>
+              <button type="submit" class="btn btn-success btn-flat" name="edit"><i class="fa fa-check-square-o"></i> Editar </button>
               </form>
             </div>
         </div>
@@ -139,13 +139,13 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"><b> Eliminar </b></h4>
+              <h4 class="modal-title"><b>Confirmar eliminación</b></h4>
             </div>
             <div class="modal-body">
               <form class="form-horizontal" method="POST" action="users_delete.php">
                 <input type="hidden" class="userid" name="id">
                 <div class="text-center">
-                    <p>ELIMINAR USUARIO</p>
+                    <p>¿Está seguro que desea eliminar el registro seleccionado?</p>
                     <h2 class="bold fullname"></h2>
                 </div>
             </div>

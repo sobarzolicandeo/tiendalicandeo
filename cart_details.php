@@ -106,7 +106,7 @@
 		else{
 			$output .= "
 				<tr>
-					<td colspan='6' align='center'>Carro de compra vacio</td>
+					<td colspan='6' align='center'>Carrito de compra vacio</td>
 				<tr>
 			";
 		}

@@ -5,7 +5,7 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"><b>Agregar nuevo Producto</b></h4>
+              <h4 class="modal-title"><b>Agregar producto</b></h4>
             </div>
             <div class="modal-body">
               <form class="form-horizontal" method="POST" action="cart_add.php">
@@ -29,7 +29,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Cerrar</button>
-              <button type="submit" class="btn btn-primary btn-flat" name="add"><i class="fa fa-save"></i> Guardar</button>
+              <button type="submit" class="btn btn-primary btn-flat" name="add"><i class="fa fa-save"></i> Agregar</button>
               </form>
             </div>
         </div>
@@ -58,8 +58,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
-              <button type="submit" class="btn btn-success btn-flat" name="edit"><i class="fa fa-check-square-o"></i> Update</button>
+              <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Cerrar</button>
+              <button type="submit" class="btn btn-success btn-flat" name="edit"><i class="fa fa-check-square-o"></i> Editar</button>
               </form>
             </div>
         </div>
@@ -73,14 +73,14 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"><b>Eliminando...</b></h4>
+              <h4 class="modal-title"><b>Confirmar eliminación</b></h4>
             </div>
             <div class="modal-body">
               <form class="form-horizontal" method="POST" action="cart_delete.php">
                 <input type="hidden" class="cartid" name="cartid">
                 <input type="hidden" class="userid" name="userid">
                 <div class="text-center">
-                    <p>ELIMINAR PRODUCTO</p>
+                    <p>¿Está seguro que desea eliminar el registro seleccionado?</p>
                     <h2 class="bold productname"></h2>
                 </div>
             </div>

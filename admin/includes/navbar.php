@@ -2,7 +2,7 @@
   <!-- Logo -->
   <a href="#" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><b>C</b>P</span>
+    <span class="logo-mini"><b>T</b>L</span>
     <!-- logo for regular state and mobile devices -->
     <span class="logo-lg"><b>Tienda</b>Licandeo</span>
   </a>
@@ -33,7 +33,7 @@
             </li>
             <li class="user-footer">
               <div class="pull-left">
-                <a href="#profile" data-toggle="modal" class="btn btn-default btn-flat" id="admin_profile">Panel</a>
+                <a href="#profile" data-toggle="modal" class="btn btn-default btn-flat" id="admin_profile">Perfil</a>
               </div>
               <div class="pull-right">
                 <a href="../logout.php" class="btn btn-default btn-flat">Salir</a>
