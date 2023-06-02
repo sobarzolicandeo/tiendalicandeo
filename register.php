@@ -63,7 +63,7 @@
 						<p>Tu Cuenta:</p>
 						<p>Correo: ".$email."</p>
 						<p>Contraseña: ".$_POST['password']."</p>
-						<p>Favor haz clic en el sigueinte enlace para activar tu cuenta:</p>
+						<p>Favor haz clic en el siguiente enlace para activar tu cuenta:</p>
 						<a href='http://localhost/tiendalicandeo/activate.php?code=".$code."&user=".$userid."'>Confirmar registro</a>
 					";
 
@@ -110,7 +110,7 @@
 
 				    } 
 				    catch (Exception $e) {
-				        $_SESSION['error'] = 'Message could not be sent. Mailer Error: '.$mail->ErrorInfo;
+				        $_SESSION['error'] = 'No se pudo enviar el mensaje. Error de correo: '.$mail->ErrorInfo;
 				        header('location: signup.php');
 				    }
 

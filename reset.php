@@ -14,7 +14,7 @@
 		$row = $stmt->fetch();
 
 		if($row['numrows'] > 0){
-			//generate code
+			//generar codigo
 			$set='123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 			$code=substr(str_shuffle($set), 0, 15);
 			try{
@@ -22,24 +22,24 @@
 				$stmt->execute(['code'=>$code, 'id'=>$row['id']]);
 				
 				$message = "
-					<h2>Cambiar Contraseña</h2>
+					<h2>Cambiar contrasena</h2>
 					<p>Tu cuenta:</p>
 					<p>Correo: ".$email."</p>
-					<p>Favor hacer click en link para cambiar contraseña.</p>
-					<a href='http://localhost/tiendalicandeo/password_reset.php?code=".$code."&user=".$row['id']."'>Reset Password</a>
+					<p>Favor haz clic en el siguiente enlace para restablecer tu contrasena:</p>
+					<a href='http://localhost/tiendalicandeo/password_reset.php?code=".$code."&user=".$row['id']."'>Recuperar contrasena</a>
 				";
 
-				//Load phpmailer
+				//Cargar phpmailer
 	    		require 'vendor/autoload.php';
 
 	    		$mail = new PHPMailer(true);                             
 			    try {
-			        //Server settings
+			        //Configuración del servidor
 			        $mail->isSMTP();                                     
 			        $mail->Host = 'smtp.gmail.com';                      
 			        $mail->SMTPAuth = true;                               
-			        $mail->Username = 'testsourcecodester@gmail.com';     
-			        $mail->Password = 'mysourcepass';                    
+			        $mail->Username = 'tiendalicandeo@gmail.com';     
+			        $mail->Password = 'wujopymnxubukcex';                    
 			        $mail->SMTPOptions = array(
 			            'ssl' => array(
 			            'verify_peer' => false,
@@ -50,24 +50,24 @@
 			        $mail->SMTPSecure = 'ssl';                           
 			        $mail->Port = 465;                                   
 
-			        $mail->setFrom('testsourcecodester@gmail.com');
+			        $mail->setFrom('tiendalicandeo@gmail.com');
 			        
-			        //Recipients
+			        //Destinatario
 			        $mail->addAddress($email);              
-			        $mail->addReplyTo('testsourcecodester@gmail.com');
+			        $mail->addReplyTo('tiendalicandeo@gmail.com');
 			       
-			        //Content
+			        //Contenido
 			        $mail->isHTML(true);                                  
-			        $mail->Subject = 'ECommerce Site Password Reset';
+			        $mail->Subject = 'Restablecer contrasena - Tienda Licandeo';
 			        $mail->Body    = $message;
 
 			        $mail->send();
 
-			        $_SESSION['success'] = 'Password reset link sent';
+			        $_SESSION['success'] = 'Enlace de restablecimiento de contraseña enviado';
 			     
 			    } 
 			    catch (Exception $e) {
-			        $_SESSION['error'] = 'Message could not be sent. Mailer Error: '.$mail->ErrorInfo;
+			        $_SESSION['error'] = 'No se pudo enviar el mensaje. Error de correo: '.$mail->ErrorInfo;
 			    }
 			}
 			catch(PDOException $e){
@@ -75,14 +75,14 @@
 			}
 		}
 		else{
-			$_SESSION['error'] = 'Email not found';
+			$_SESSION['error'] = 'Correo electrónico no encontrado';
 		}
 
 		$pdo->close();
 
 	}
 	else{
-		$_SESSION['error'] = 'Input email associated with account';
+		$_SESSION['error'] = 'Ingrese el correo electrónico asociado a la cuenta';
 	}
 
 	header('location: password_forgot.php');

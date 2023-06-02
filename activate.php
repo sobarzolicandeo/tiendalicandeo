@@ -7,7 +7,7 @@
                 <h4><i class="icon fa fa-warning"></i> Error!</h4>
                 Code to activate account not found.
             </div>
-            <h4>Debes Ingresar <a href="signup.php">Signup</a> o regresar al <a href="index.php">Inicio</a>.</h4>
+            <h4>Debes ingresar <a href="signup.php">Registrarse</a> o regresar al <a href="index.php">Inicio</a>.</h4>
 		'; 
 	}
 	else{
@@ -44,7 +44,7 @@
 			                <h4><i class="icon fa fa-warning"></i> Error!</h4>
 			                '.$e->getMessage().'
 			            </div>
-			            <h4>Debes ingresar <a href="signup.php">Signup</a> or regresar al <a href="index.php">Inicio</a>.</h4>
+			            <h4>Debes ingresar <a href="signup.php">Registrarse</a> o regresar al <a href="index.php">Inicio</a>.</h4>
 					';
 				}
 
@@ -54,10 +54,9 @@
 		else{
 			$output .= '
 				<div class="alert alert-danger">
-	                <h4><i class="icon fa fa-warning"></i> Error!</h4>
-	                Cannot activate account. Wrong code.
+	                No se puede activar la cuenta. Código erróneo..
 	            </div>
-	            <h4>Debes ingresar <a href="signup.php">Signup</a> o regresar al <a href="index.php">Inicio</a>.</h4>
+	            <h4>Debes ingresar <a href="signup.php">Login</a> o regresar al <a href="index.php">Inicio</a>.</h4>
 			';
 		}
 
