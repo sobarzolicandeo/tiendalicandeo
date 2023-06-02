@@ -59,7 +59,7 @@
 					$userid = $conn->lastInsertId();
 
 					$message = "
-						<h2>¡Gracias por registrarte en Tienda Licandeo!</h2>
+						<h2>Gracias por registrarte en Tienda Licandeo</h2>
 						<p>Tu Cuenta:</p>
 						<p>Correo: ".$email."</p>
 						<p>Contraseña: ".$_POST['password']."</p>

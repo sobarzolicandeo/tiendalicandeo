@@ -67,7 +67,7 @@
                       $stmt->execute(['type'=>0]);
                       foreach($stmt as $row){
                         $image = (!empty($row['photo'])) ? '../images/users/'.$row['photo'] : '../images/users/profile.jpg';
-                        $status = ($row['status']) ? '<span class="label label-success">activo</span>' : '<span class="label label-danger">sin verificar</span>';
+                        $status = ($row['status']) ? '<span class="label label-success">activo</span>' : '<span class="label label-danger">sin confirmar</span>';
                         $active = (!$row['status']) ? '<span class="pull-right"><a href="#activate" class="status" data-toggle="modal" data-id="'.$row['id'].'"><i class="fa fa-check-square-o"></i></a></span>' : '';
                         echo "
                           <tr>
