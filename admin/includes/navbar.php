@@ -36,7 +36,7 @@
                 <a href="#profile" data-toggle="modal" class="btn btn-default btn-flat" id="admin_profile">Perfil</a>
               </div>
               <div class="pull-right">
-                <a href="../logout.php" class="btn btn-default btn-flat">Salir</a>
+                <a href="../logout.php" class="btn btn-default btn-flat">Cerrar sesión</a>
               </div>
             </li>
           </ul>
