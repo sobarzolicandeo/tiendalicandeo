@@ -33,10 +33,9 @@
 					$stmt->execute(['status'=>1, 'id'=>$row['id']]);
 					$output .= '
 						<div class="alert alert-success">
-			                <h4><i class="icon fa fa-check"></i> Success!</h4>
-			                Account activated - Email: <b>'.$row['email'].'</b>.
+			                Cuenta activada - Correo electrónico: <b>'.$row['email'].'</b>.
 			            </div>
-			            <h4>Debes ingresar <a href="login.php">Login</a> o regresar al <a href="index.php">Inicio</a>.</h4>
+			            <h4>Debes ingresar al <a href="login.php">Login</a> o regresar al <a href="index.php">Inicio</a>.</h4>
 					';
 				}
 				catch(PDOException $e){

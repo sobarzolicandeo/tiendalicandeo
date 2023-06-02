@@ -4,7 +4,7 @@
 
 	include 'includes/session.php';
 
-	if(isset($_POST['signup'])){
+	if(!isset($_POST['signup'])){
 		$firstname = $_POST['firstname'];
 		$lastname = $_POST['lastname'];
 		$email = $_POST['email'];
@@ -59,12 +59,12 @@
 					$userid = $conn->lastInsertId();
 
 					$message = "
-						<h2>Gracias por Registrarse en Tienda Licandeo.</h2>
+						<h2>¡Gracias por registrarte en Tienda Licandeo!</h2>
 						<p>Tu Cuenta:</p>
 						<p>Correo: ".$email."</p>
 						<p>Contraseña: ".$_POST['password']."</p>
-						<p>Favor hacer click en link para activar su cuenta.</p>
-						<a href='http://localhost/tiendalicandeo/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
+						<p>Favor haz clic en el sigueinte enlace para activar tu cuenta:</p>
+						<a href='http://localhost/tiendalicandeo/activate.php?code=".$code."&user=".$userid."'>Confirmar registro</a>
 					";
 
 					//Load phpmailer
@@ -76,8 +76,8 @@
 				        $mail->isSMTP();                                     
 				        $mail->Host = 'smtp.gmail.com';                      
 				        $mail->SMTPAuth = true;                               
-				        $mail->Username = 'testsourcecodester@gmail.com';     
-				        $mail->Password = 'mysourcepass';                    
+				        $mail->Username = 'tiendalicandeo@gmail.com';     
+				        $mail->Password = 'wujopymnxubukcex';                    
 				        $mail->SMTPOptions = array(
 				            'ssl' => array(
 				            'verify_peer' => false,
@@ -88,15 +88,15 @@
 				        $mail->SMTPSecure = 'ssl';                           
 				        $mail->Port = 465;                                   
 
-				        $mail->setFrom('testsourcecodester@gmail.com');
+				        $mail->setFrom('tiendalicandeo@gmail.com');
 				        
 				        //Recipients
 				        $mail->addAddress($email);              
-				        $mail->addReplyTo('testsourcecodester@gmail.com');
+				        $mail->addReplyTo('tiendalicandeo@gmail.com');
 				       
 				        //Content
 				        $mail->isHTML(true);                                  
-				        $mail->Subject = 'ECommerce Site Sign Up';
+				        $mail->Subject = 'Tienda Licandeo - Confirmar registro';
 				        $mail->Body    = $message;
 
 				        $mail->send();
@@ -105,7 +105,7 @@
 				        unset($_SESSION['lastname']);
 				        unset($_SESSION['email']);
 
-				        $_SESSION['success'] = 'Account created. Check your email to activate.';
+				        $_SESSION['success'] = 'Cuenta creada. Revisa tu correo electrónico para activar.';
 				        header('location: signup.php');
 
 				    } 

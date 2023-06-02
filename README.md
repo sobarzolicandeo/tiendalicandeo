@@ -9,11 +9,12 @@
 | dsobarzo@licandeo.cl  | admin      |
 | ptrujillo@licandeo.cl | admin      |
 
-## Usuario cliente
+## Usuarios clientes
 
-| Email                 | Contraseña |
-| --------------------- | ---------- |
-| mperez@gmail.com      | 1234       |
+| Email                      | Contraseña |
+| -------------------------- | ---------- |
+| sobarzolicandeo@gmail.com  | 1234       |
+| abarrazabriones@gmail.com  | 1234       |
 
 ## Cuenta sandbox para pago paypal
 | Email                                   | Contraseña |
