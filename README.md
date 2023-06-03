@@ -27,8 +27,7 @@ Script de creación de base de datos **tiendalicandeo.sql** en carpeta **/databa
 | sb-3ogkn26138059@personal.example.com   | 12345678   |
 
 ## Usuario PayPal Developer para revisar notificaciones
-
-[PayPal Developer Dashboard](https://developer.paypal.com/
+[PayPal Developer Dashboard](https://developer.paypal.com/)
 dashboard/notifications)
 
 | Email                       | Contraseña |
