@@ -2,7 +2,7 @@
 ```
 Script de creación de base de datos tiendalicandeo.sql en carpeta /database.
 ```
-## Utilizar las siguiente versión de XAMPP
+## Versión de XAMPP recomendada
 
  - [Windows](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/5.6.40/)
  - [macOS](https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/5.6.40/)
