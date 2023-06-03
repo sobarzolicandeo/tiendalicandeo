@@ -32,7 +32,7 @@
 		// }
 
 		if($password != $repassword){
-			$_SESSION['error'] = 'Passwords did not match';
+			$_SESSION['error'] = 'Las contraseñas no coinciden';
 			header('location: signup.php');
 		}
 		else{
@@ -132,6 +132,3 @@
 		$_SESSION['error'] = 'Favor ingrese los datos solicitados';
 		header('location: signup.php');
 	}
-	
-
-?>
