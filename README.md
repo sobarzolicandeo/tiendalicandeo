@@ -1,6 +1,6 @@
 # Tienda Licandeo
 ```
-Script de creación de base de datos **tiendalicandeo.sql** en carpeta **/database**.
+Script de creación de base de datos tiendalicandeo.sql en carpeta /database.
 ```
 ## Utilizar las siguiente versión de XAMPP
 
