@@ -64,7 +64,7 @@ if (isset($_POST['signup'])) {
 						<p>Correo electrónico: " . $email . "</p>
 						<p>Contraseña: " . $_POST['password'] . "</p>
 						<p>Favor haz clic en el siguiente enlace para activar tu cuenta:</p>
-						<a href='http://localhost/ecommerce/activate.php?code=" . $code . "&user=" . $userid . "'>Confirmar registro</a>
+						<a href='http://localhost/tiendalicandeo/activate.php?code=" . $code . "&user=" . $userid . "'>Confirmar registro</a>
 					";
 
 				//Load phpmailer
