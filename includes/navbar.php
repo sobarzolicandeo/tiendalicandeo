@@ -1,5 +1,5 @@
 <header class="main-header">
-  <nav class="navbar navbar-static-top" style="background-color: #513b0e;">
+  <nav class="navbar navbar-static-top" style="background-color: #5a3d2b;">
     <div class="container">
       <div class="navbar-header">
         <a href="index.php" class="navbar-brand"><b>Tienda Licandeo</b></a>
@@ -18,22 +18,22 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorías <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <?php
-             
-                $conn = $pdo->open();
+
+              $conn = $pdo->open();
                 try{
-                  $stmt = $conn->prepare("SELECT * FROM category");
-                  $stmt->execute();
+                $stmt = $conn->prepare("SELECT * FROM category");
+                $stmt->execute();
                   foreach($stmt as $row){
-                    echo "
+                  echo "
                       <li><a href='category.php?category=".$row['cat_slug']."'>".$row['name']."</a></li>
-                    ";                  
-                  }
+                    ";
+                }
                 }
                 catch(PDOException $e){
-                  echo "There is some problem in connection: " . $e->getMessage();
-                }
+                echo "There is some problem in connection: " . $e->getMessage();
+              }
 
-                $pdo->close();
+              $pdo->close();
 
               ?>
             </ul>
@@ -41,10 +41,10 @@
         </ul>
         <form method="POST" class="navbar-form navbar-left" action="search.php">
           <div class="input-group">
-              <input type="text" class="form-control" id="navbar-search-input" name="keyword" placeholder="Buscar producto" required>
-              <span class="input-group-btn" id="searchBtn" style="display:none;">
-                  <button type="submit" class="btn btn-default btn-flat"><i class="fa fa-search"></i> </button>
-              </span>
+            <input type="text" class="form-control" id="navbar-search-input" name="keyword" placeholder="Buscar producto" required>
+            <span class="input-group-btn" id="searchBtn" style="display:none;">
+              <button type="submit" class="btn btn-default btn-flat"><i class="fa fa-search"></i> </button>
+            </span>
           </div>
         </form>
       </div>
@@ -70,7 +70,7 @@
           <?php
             if(isset($_SESSION['user'])){
               $image = (!empty($user['photo'])) ? 'images/users/'.$user['photo'] : 'images/users/profile.jpg';
-              echo '
+            echo '
                 <li class="dropdown user user-menu">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <img src="'.$image.'" class="user-image" alt="User Image">
@@ -99,11 +99,11 @@
               ';
             }
             else{
-              echo "
+            echo "
                 <li><a href='login.php'>Iniciar sesión</a></li>
                 <li><a href='signup.php'>Registrarse</a></li>
               ";
-            }
+          }
           ?>
         </ul>
       </div>

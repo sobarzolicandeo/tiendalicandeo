@@ -1,6 +1,11 @@
 # Tienda Licandeo
+```
+Script de creación de base de datos tiendalicandeo.sql en carpeta /database.
+```
+## Versión de XAMPP recomendada
 
-### Script de creación de base de datos **tiendalicandeo.sql** en carpeta **database**.
+ - [Windows](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/5.6.40/)
+ - [macOS](https://sourceforge.net/projects/xampp/files/XAMPP%20Mac%20OS%20X/5.6.40/)
 
 ## Usuarios administradores backoffice
 
@@ -23,7 +28,7 @@
 
 ## Usuario PayPal Developer para revisar notificaciones
 [PayPal Developer Dashboard](https://developer.paypal.com/dashboard/notifications)
+
 | Email                       | Contraseña |
 | ----------------------------| ---------- |
 | sobarzolicandeo@gmail.com   | Diego.3062 |
-

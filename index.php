@@ -30,13 +30,13 @@
 		                </ol>
 		                <div class="carousel-inner">
 		                  <div class="item active">
-		                    <img src="images/carousel/imagen2.jpg" alt="First slide">
+		                    <img src="images/carousel/image02.jpg" alt="First slide">
 		                  </div>
 						  <div class="item">
-           					<img src="images/carousel/imagen3.jpg" alt="Second slide">
+           					<img src="images/carousel/image04.jpeg" alt="Second slide">
         				  </div>
 						  <div class="item">
-           					<img src="images/carousel/imagen7.jpg" alt="Second slide">
+           					<img src="images/carousel/image03.jpg" alt="Second slide">
         				  </div>						  
 		                </div>
 		                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">

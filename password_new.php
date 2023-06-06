@@ -13,7 +13,7 @@
 		$repassword = $_POST['repassword'];
 
 		if($password != $repassword){
-			$_SESSION['error'] = 'Passwords did not match';
+			$_SESSION['error'] = 'Las contraseñas no coinciden';
 			header('location: '.$path);
 		}
 		else{
@@ -51,5 +51,3 @@
 		$_SESSION['error'] = 'Input new password first';
 		header('location: '.$path);
 	}
-
-?>
