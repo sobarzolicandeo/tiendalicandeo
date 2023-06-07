@@ -43,7 +43,7 @@ if (isset($_POST['signup'])) {
 		$stmt->execute(['email' => $email]);
 		$row = $stmt->fetch();
 		if ($row['numrows'] > 0) {
-			$_SESSION['error'] = 'Correo electrónico ya existe';
+			$_SESSION['error'] = 'Correo electrónico ya registrado en nuestro sistema.';
 			header('location: signup.php');
 		} else {
 			$now = date('Y-m-d');
