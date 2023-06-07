@@ -2,12 +2,9 @@
 //============================================================+
 // File name   : tcpdf_parser.php
 // Version     : 1.0.16
-// Begin       : 2011-05-23
-// Last Update : 2015-04-28
-// Author      : Nicola Asuni - Tecnick.com LTD - www.tecnick.com - info@tecnick.com
 // License     : http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT GNU-LGPLv3
 // -------------------------------------------------------------------
-// Copyright (C) 2011-2015 Nicola Asuni - Tecnick.com LTD
+//
 //
 // This file is part of TCPDF software library.
 //

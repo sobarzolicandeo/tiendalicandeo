@@ -5,7 +5,7 @@
  * classes.
  *
  * BSD 3-Clause License
- * @copyright (c) 2019, Google Inc.
+ * 
  * @link https://www.google.com/recaptcha
  * All rights reserved.
  *

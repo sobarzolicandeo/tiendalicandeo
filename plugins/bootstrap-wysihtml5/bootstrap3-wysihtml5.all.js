@@ -31,7 +31,7 @@ if(!Array.isArray) {
  * Author: Christopher Blum (https://github.com/tiff)
  * Secondary author of extended features: Oliver Pulges (https://github.com/pulges)
  *
- * Copyright (C) 2012 XING AG
+ * 
  * Licensed under the MIT license (MIT)
  *
  */
@@ -64,10 +64,8 @@ var wysihtml5 = {
  * Rangy, a cross-browser JavaScript range and selection library
  * http://code.google.com/p/rangy/
  *
- * Copyright 2014, Tim Down
  * Licensed under the MIT license.
  * Version: 1.3alpha.20140804
- * Build date: 4 August 2014
  */
 
 (function(factory, global) {
@@ -3802,10 +3800,8 @@ var wysihtml5 = {
  *
  * Depends on Rangy core.
  *
- * Copyright 2014, Tim Down
  * Licensed under the MIT license.
  * Version: 1.3alpha.20140804
- * Build date: 4 August 2014
  */
 (function(factory, global) {
     if (typeof define == "function" && define.amd) {

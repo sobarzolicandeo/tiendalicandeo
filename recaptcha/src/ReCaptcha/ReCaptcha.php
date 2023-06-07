@@ -3,7 +3,7 @@
  * This is a PHP library that handles calling reCAPTCHA.
  *
  * BSD 3-Clause License
- * @copyright (c) 2019, Google Inc.
+ * @copyright
  * @link https://www.google.com/recaptcha
  * All rights reserved.
  *
