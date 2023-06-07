@@ -3,7 +3,7 @@
 /*!
 * Timepicker Component for Twitter Bootstrap
 *
-* Copyright 2013 Joris de Wit
+* 
 *
 * Contributors https://github.com/jdewit/bootstrap-timepicker/graphs/contributors
 *

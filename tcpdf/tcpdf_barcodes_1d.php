@@ -2,12 +2,9 @@
 //============================================================+
 // File name   : tcpdf_barcodes_1d.php
 // Version     : 1.0.027
-// Begin       : 2008-06-09
-// Last Update : 2014-10-20
-// Author      : Nicola Asuni - Tecnick.com LTD - www.tecnick.com - info@tecnick.com
 // License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
 // -------------------------------------------------------------------
-// Copyright (C) 2008-2014 Nicola Asuni - Tecnick.com LTD
+//
 //
 // This file is part of TCPDF software library.
 //
