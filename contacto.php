@@ -1,45 +1,69 @@
-<?php
-/**
- * Simple formulario de contacto con PHP
- *
- * @author parzibyte
- * @see https://parzibyte.me/blog
- */
+<?php include 'includes/session.php'; ?>
+<?php include 'includes/header.php'; ?>
 
-if (empty($_POST["nombre"])) {
-    exit("Falta el nombre");
-}
+<body class="hold-transition skin-blue layout-top-nav">
+    <div class="wrapper">
 
-if (empty($_POST["correo"])) {
-    exit("Falta el correo");
-}
+        <?php include 'includes/navbar.php'; ?>
 
-if (empty($_POST["mensaje"])) {
-    exit("Falta el mensaje");
-}
+        <div class="content-wrapper">
+            <div class="container">
 
-$nombre = $_POST["nombre"];
-$correo = $_POST["correo"];
-$mensaje = $_POST["mensaje"];
+                <!-- Main content -->
+                <section class="content">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <?php
+                            if (isset($_SESSION['error'])) {
+                                echo "
+	        					<div class='alert alert-danger'>
+	        						" . $_SESSION['error'] . "
+	        					</div>
+	        				";
+                                unset($_SESSION['error']);
+                            }
+                            ?>
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="images/carousel/image01.jpg" alt="First slide">
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <br>
+                            <h1>Detalles de Contacto</h1>
+                            <br>
+                            <h3>Nos encontramos en:</h3>
+                            <h4>Viña del mar, Chile.</h4>
+                            <h3>Contáctanos por consultas relacionadas a ventas.</h3>
+                            <h4>tiendalicandeo@gmail.com</h4>
+                            <br><br>
+                            <p>¡Te esperamos en Tienda Licandeo!</p>
+                            <br>
+                            <div>
+                                <a class="btn btn-social-icon btn-facebook" href="https://web.facebook.com/profile.php?id=100077253904639"><i class="fa fa-facebook"></i></a>
+                                <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/TiendaLicandeo"><i class="fa fa-twitter"></i></a>
+                                <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/tienda_licandeo/"><i class="fa fa-instagram"></i></a>
 
-$correo = filter_var($correo, FILTER_VALIDATE_EMAIL);
-if (!$correo) {
-    echo "Correo inválido. Intenta con otro correo.";
-    exit;
-}
+                            </div>
+                            <br>
+                            <br>
+                        </div>
 
-$asunto = "Nuevo mensaje de sitio web";
+                        <div class=" col-sm-3">
+                            <?php include 'includes/sidebar.php'; ?>
+                        </div>
+                    </div>
+                </section>
 
-$datos = "De: $nombre\nCorreo: $correo\nMensaje: $mensaje";
-$mensaje = "Has recibido un mensaje desde el formulario de contacto de tu sitio web. Aquí están los detalles:\n$datos";
-$destinatario = "tu_correo@dominio.com"; # aquí la persona que recibirá los mensajes
-$encabezados = "Sender: correo@dominio.com\r\n"; # El remitente, debe ser un correo de tu dominio de servidor
-$encabezados .= "From: $nombre <" . $correo . ">\r\n";
-$encabezados .= "Reply-To: $nombre <$correo>\r\n";
-$resultado = mail($destinatario, $asunto, $mensaje, $encabezados);
-if ($resultado) {
-    echo "<h1>Mensaje enviado, ¡Gracias por contactarme!</h1>";
-    echo "<p>Tu mensaje se ha enviado correctamente.</p><h2>Importante</h2><p>Revisa tu bandeja de SPAM, en ocasiones mis respuestas quedan ahí. </p>";
-} else {
-    echo "Tu mensaje no se ha enviado. Intenta de nuevo.";
-}
+            </div>
+        </div>
+
+        <?php include 'includes/footer.php'; ?>
+    </div>
+
+    <?php include 'includes/scripts.php'; ?>
+</body>
+
+</html>
