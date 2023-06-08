@@ -26,28 +26,17 @@
                             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img src="images/carousel/image01.jpg" alt="First slide">
+                                        <img src="images/carousel/image05.jpeg" alt="First slide">
                                     </div>
                                 </div>
                                 </a>
                             </div>
                             <br>
                             <h1>Detalles de Contacto</h1>
-                            <br>
-                            <h3>Nos encontramos en:</h3>
-                            <h4>Viña del mar, Chile.</h4>
-                            <h3>Contáctanos por consultas relacionadas a ventas.</h3>
+                            <h3>Contáctanos.</h3>
                             <h4>tiendalicandeo@gmail.com</h4>
-                            <br><br>
+                            <br>
                             <p>¡Te esperamos en Tienda Licandeo!</p>
-                            <br>
-                            <div>
-                                <a class="btn btn-social-icon btn-facebook" href="https://web.facebook.com/profile.php?id=100077253904639"><i class="fa fa-facebook"></i></a>
-                                <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/TiendaLicandeo"><i class="fa fa-twitter"></i></a>
-                                <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/tienda_licandeo/"><i class="fa fa-instagram"></i></a>
-
-                            </div>
-                            <br>
                             <br>
                         </div>
 
@@ -56,7 +45,6 @@
                         </div>
                     </div>
                 </section>
-
             </div>
         </div>
 
@@ -64,6 +52,7 @@
     </div>
 
     <?php include 'includes/scripts.php'; ?>
+
 </body>
 
 </html>
