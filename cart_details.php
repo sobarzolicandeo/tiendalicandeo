@@ -52,7 +52,15 @@
 			}
 			$output .= "
 				<tr>
-					<td colspan='5' align='right'><b>Total</b></td>
+					<td colspan='5' align='right'><b>Neto</b></td>
+					<td><b>&#36; " . number_format($total * 0.81, 0, ',', '.') . "</b></td>
+				<tr>
+				<tr>
+					<td colspan='5' align='right'><b>IVA 19%</b></td>
+					<td><b>&#36; " . number_format($total * 0.19, 0, ',', '.') . "</b></td>
+				<tr>
+				<tr>
+					<td colspan='5' align='right'><b>Total a pagar</b></td>
 					<td><b>&#36; ".number_format($total, 0, ',', '.')."</b></td>
 				<tr>
 			";
@@ -96,8 +104,16 @@
 			}
 
 			$output .= "
+			  <tr>
+					<td colspan='5' align='right'><b>Neto</b></td>
+					<td><b>&#36; " . number_format($total*0.81, 0, ',', '.') . "</b></td>
 				<tr>
-					<td colspan='5' align='right'><b>Total</b></td>
+				<tr>
+					<td colspan='5' align='right'><b>IVA 19%</b></td>
+					<td><b>&#36; " . number_format($total * 0.19, 0, ',', '.') . "</b></td>
+				<tr>
+				<tr>
+					<td colspan='5' align='right'><b>Total a pagar</b></td>
 					<td><b>&#36; ".number_format($total, 0, ',', '.')."</b></td>
 				<tr>
 			";
