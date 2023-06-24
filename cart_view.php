@@ -37,7 +37,7 @@
 	        			}
 	        			else{
 	        				echo "
-	        					<h4>Necesitas ingresar a tu cuenta <a href='login.php'>Login</a> para comprar.</h4>
+	        					<h4><a href='login.php'>Inicia sesión</a> para poder continuar con tu compra.</h4>
 	        				";
 	        			}
 	        		?>

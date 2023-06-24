@@ -23,7 +23,7 @@
 	       				echo '<h1 class="page-header">No results found for <i>'.$_POST['keyword'].'</i></h1>';
 	       			}
 	       			else{
-	       				echo '<h1 class="page-header">Search results for <i>'.$_POST['keyword'].'</i></h1>';
+	       				echo '<h1 class="page-header">Resultados de la búsqueda <i>'.$_POST['keyword'].'</i></h1>';
 		       			try{
 		       			 	$inc = 3;	
 						    $stmt = $conn->prepare("SELECT * FROM products WHERE name LIKE :keyword");
