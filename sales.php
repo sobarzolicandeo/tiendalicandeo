@@ -31,11 +31,11 @@ if (isset($_GET['pay'])) {
 
 			$message = "
 						<h2>Hemos confirmado el pago de tu compra</h2>
-						<h3>y tu pedido ya esta en proceso</h3>
+						<h3>y tu pedido ya esta en proceso.</h3>
 						<p>El numero de transaccion es: " . $payid . "</p>
 						<p>Puedes acceder al detalle de tus compras desde el <a href='http://localhost/tiendalicandeo/profile.php'>perfil de tu cuenta</a>.</p
 						<h3>Pronto nos pondremos en contacto para coordinar el envío.</h3>
-						<p>No te olvides de seguir nuestras redes sociales:</p>
+						<p>No te olvides de seguirnos en nuestras redes sociales:</p>
 						<a href='https://www.instagram.com/tienda_licandeo/'>Instagram</a>
 						<br>
 						<a href='https://twitter.com/TiendaLicandeo'>Twitter</a>
