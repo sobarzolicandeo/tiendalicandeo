@@ -82,7 +82,7 @@
 							</p>
 
 							<br>
-							<p>¡Te esperamos en Tienda Licandeo!</p>
+
 							<br>
 							<br>
 							<br>

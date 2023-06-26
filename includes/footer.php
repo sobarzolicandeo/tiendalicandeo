@@ -4,6 +4,6 @@
       <b></b>
       <?php include 'includes/foot.php'; ?>
     </div>
-    <strong>Copyright &copy; 2023 <a href="https://www.instagram.com/tienda_licandeo/">Tienda Licandeo</a></strong>
+    <strong>Copyright &copy; 2023 <a href="https://www.licandeo.cl">Tienda Licandeo</a></strong>
   </div>
 </footer>
