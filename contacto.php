@@ -36,7 +36,7 @@
                             <h3>Contáctanos.</h3>
                             <h4>tiendalicandeo@gmail.com</h4>
                             <br>
-                            <p>¡Te esperamos en Tienda Licandeo!</p>
+
                             <br>
                         </div>
 

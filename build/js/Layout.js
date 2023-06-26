@@ -1,11 +1,11 @@
 /* Layout()
  * ========
- * Implements AdminLTE layout.
- * Fixes the layout height in case min-height fails.
+ * Implementa el diseño AdminLTE.
+ * Corrige la altura del diseño en caso de que falle la altura mínima.
  *
- * @usage activated automatically upon window load.
- *        Configure any options by passing data-option="value"
- *        to the body tag.
+ * @usage se activa automáticamente al cargar la ventana.
+ * Configure cualquier opción pasando data-option="value"
+ * a la etiqueta del cuerpo.
  */
 +function ($) {
   'use strict'
@@ -80,17 +80,17 @@
   }
 
   Layout.prototype.fix = function () {
-    // Remove overflow from .wrapper if layout-boxed exists
+    // Eliminar el desbordamiento de .wrapper si existe un cuadro de diseño
     $(Selector.layoutBoxed + ' > ' + Selector.wrapper).css('overflow', 'hidden')
 
-    // Get window height and the wrapper height
+    // Obtenga la altura de la ventana y la altura de la envoltura
     var footerHeight  = $(Selector.mainFooter).outerHeight() || 0
     var neg           = $(Selector.mainHeader).outerHeight() + footerHeight
     var windowHeight  = $(window).height()
     var sidebarHeight = $(Selector.sidebar).height() || 0
 
-    // Set the min-height of the content and sidebar based on
-    // the height of the document.
+    // Establezca la altura mínima del contenido y la barra lateral en función de
+    // la altura del documento.
     if ($('body').hasClass(ClassName.fixed)) {
       $(Selector.contentWrapper).css('min-height', windowHeight - footerHeight)
     } else {
@@ -104,7 +104,7 @@
         postSetHeight = sidebarHeight
       }
 
-      // Fix for the control sidebar height
+      // Arreglo para la altura de la barra lateral de control.
       var $controlSidebar = $(Selector.controlSidebar)
       if (typeof $controlSidebar !== 'undefined') {
         if ($controlSidebar.height() > postSetHeight)
@@ -114,7 +114,7 @@
   }
 
   Layout.prototype.fixSidebar = function () {
-    // Make sure the body tag has the .fixed class
+    // Asegúrese de que la etiqueta del cuerpo tenga la clase .fixed
     if (!$('body').hasClass(ClassName.fixed)) {
       if (typeof $.fn.slimScroll !== 'undefined') {
         $(Selector.sidebar).slimScroll({ destroy: true }).height('auto')
@@ -138,7 +138,7 @@
     }
   }
 
-  // Plugin Definition
+  // Definición de complemento
   // =================
   function Plugin(option) {
     return this.each(function () {
@@ -164,7 +164,7 @@
   $.fn.layout            = Plugin
   $.fn.layout.Constuctor = Layout
 
-  // No conflict mode
+  // Sin modo de conflicto
   // ================
   $.fn.layout.noConflict = function () {
     $.fn.layout = old
