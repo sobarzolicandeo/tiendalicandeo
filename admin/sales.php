@@ -66,7 +66,7 @@
                         echo "
                           <tr>
                             <td class='hidden'></td>
-                            <td>" . date('d-m-Y', strtotime($row['sales_date'])) . "</td>
+                            <td>" . date('d/m/Y', strtotime($row['sales_date'])) . "</td>
                             <td>" . $row['firstname'] . ' ' . $row['lastname'] . "</td>
                             <td>" . $row['pay_id'] . "</td>
                             <td>&#36; " . number_format($total, 0, ',', '.') . "</td>

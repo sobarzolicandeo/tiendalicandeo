@@ -39,8 +39,8 @@
 		$ex = explode(' - ', $_POST['date_range']);
 		$from = date('Y-m-d', strtotime($ex[0]));
 		$to = date('Y-m-d', strtotime($ex[1]));
-		$from_title = date('d-m-Y', strtotime($ex[0]));
-		$to_title = date('d-m-Y', strtotime($ex[1]));
+		$from_title = date('d/m/Y', strtotime($ex[0]));
+		$to_title = date('d/m/Y', strtotime($ex[1]));
 
 		$conn = $pdo->open();
 
