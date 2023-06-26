@@ -18,7 +18,7 @@
 			$total += $amount;
 			$contents .= '
 			<tr>
-				<td>'.date('M d, Y', strtotime($row['sales_date'])).'</td>
+				<td>'.date('d-m-Y', strtotime($row['sales_date'])).'</td>
 				<td>'.$row['firstname'].' '.$row['lastname'].'</td>
 				<td>'.$row['pay_id'].'</td>
 				<td align="right">&#36; '.number_format($amount, 0, ',', '.').'</td>
@@ -39,15 +39,15 @@
 		$ex = explode(' - ', $_POST['date_range']);
 		$from = date('Y-m-d', strtotime($ex[0]));
 		$to = date('Y-m-d', strtotime($ex[1]));
-		$from_title = date('M d, Y', strtotime($ex[0]));
-		$to_title = date('M d, Y', strtotime($ex[1]));
+		$from_title = date('d-m-Y', strtotime($ex[0]));
+		$to_title = date('d-m-Y', strtotime($ex[1]));
 
 		$conn = $pdo->open();
 
 		require_once('../tcpdf/tcpdf.php');  
 	    $pdf = new TCPDF('P', PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);  
 	    $pdf->SetCreator(PDF_CREATOR);  
-	    $pdf->SetTitle('Sales Report: '.$from_title.' - '.$to_title);  
+	    $pdf->SetTitle('Reporte de ventas: '.$from_title.' al '.$to_title);  
 	    $pdf->SetHeaderData('', '', PDF_HEADER_TITLE, PDF_HEADER_STRING);  
 	    $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));  
 	    $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));  
@@ -63,7 +63,7 @@
 	    $content .= '
 	      	<h2 align="center">Tienda Licandeo</h2>
 	      	<h4 align="center">Reporte de ventas</h4>
-	      	<h4 align="center">'.$from_title." - ".$to_title.'</h4>
+	      	<h4 align="center">'.$from_title." al ".$to_title.'</h4>
 	      	<table border="1" cellspacing="0" cellpadding="3">  
 	           <tr>  
 	           		<th width="15%" align="center"><b>Fecha</b></th>
