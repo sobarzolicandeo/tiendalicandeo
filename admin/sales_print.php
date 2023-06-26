@@ -66,10 +66,10 @@
 	      	<h4 align="center">'.$from_title." al ".$to_title.'</h4>
 	      	<table border="1" cellspacing="0" cellpadding="3">  
 	           <tr>  
-	           		<th width="15%" align="center"><b>Fecha</b></th>
+	           		<th width="14%" align="center"><b>Fecha</b></th>
 	                <th width="30%" align="center"><b>Nombre de Comprador</b></th>
-					<th width="40%" align="center"><b>N° Transacción</b></th>
-					<th width="15%" align="center"><b>Monto</b></th>  
+					<th width="43%" align="center"><b>N° Transacción</b></th>
+					<th width="14%" align="center"><b>Monto</b></th>  
 	           </tr>  
 	      ';  
 	    $content .= generateRow($from, $to, $conn);  
