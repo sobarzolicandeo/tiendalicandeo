@@ -21,7 +21,7 @@
       }
     ?>
   	<div class="login-box-body">
-    	<p class="login-box-msg"> Ingrese correo asociado con la cuenta</p>
+    	<p class="login-box-msg"> Ingrese correo asociado a la cuenta</p>
 
     	<form action="reset.php" method="POST">
       		<div class="form-group has-feedback">
